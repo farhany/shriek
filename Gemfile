@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#resize images
+gem "mini_magick"
 #protect
 gem "figaro"
 #upload images online
