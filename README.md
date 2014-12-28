@@ -1,4 +1,4 @@
 shriek
 ======
 
-Shriek is an open source Yelp clone build on Ruby on Rails. 
+Shielk is a Yelp clone written in Ruby on Rails. It is another project I am building to both contribute to the open source community, and gain a better understanding of rails.
