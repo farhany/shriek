@@ -9,6 +9,6 @@
 # production:
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
-aws_access_key_id: 'AKIAJ3HC5CQ3VETUCXBQ' 
-aws_secret_access_key: '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'
+aws_access_key_id: 'AKIAJJT3OH53WQYLIBWQ' 
+aws_secret_access_key: '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'
 fog_directory: 'shriek'
