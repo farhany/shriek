@@ -23,9 +23,14 @@
         <td><%= restaurant.address %></td>
         <td><%= restaurant.phone %></td>
         <td><%= link_to restaurant.website, restaurant.website %></td>
+
+        <% if user_signed_in? %>
         <td><%= link_to 'Show', restaurant%></td>
         <td><%= link_to 'Edit', edit_restaurant_path(restaurant)%></td>
         <td><%= link_to 'Destroy', restaurant, method: :delete, data: { confirm: 'Are you sure?' }%></td>
+        <% else %>
+        <!-- dont let them do anything -->
+        <% end %>
       </tr>
     <% end %>
   </tbody>

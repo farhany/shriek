@@ -11538,3 +11538,271 @@ Processing by RestaurantsController#new as HTML
   Rendered layouts/_navbar.html.erb (0.9ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-28 18:22:11 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  Rendered restaurants/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 14ms
+
+SyntaxError (/Users/andrewhoffman/gitroot/shriek/app/views/restaurants/index.html.erb:27: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...r.append=( if user_signed_in? );@output_buffer.safe_append='
+...                               ^
+/Users/andrewhoffman/gitroot/shriek/app/views/restaurants/index.html.erb:31: syntax error, unexpected keyword_else, expecting ')'
+'.freeze;         else 
+                      ^
+/Users/andrewhoffman/gitroot/shriek/app/views/restaurants/index.html.erb:33: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;         end 
+                     ^
+/Users/andrewhoffman/gitroot/shriek/app/views/restaurants/index.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/Users/andrewhoffman/gitroot/shriek/app/views/restaurants/index.html.erb:52: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/andrewhoffman/gitroot/shriek/app/views/restaurants/index.html.erb:54: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/restaurants/index.html.erb:27: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/restaurants/index.html.erb:31: syntax error, unexpected keyword_else, expecting ')'
+  app/views/restaurants/index.html.erb:33: syntax error, unexpected keyword_end, expecting ')'
+  app/views/restaurants/index.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+  app/views/restaurants/index.html.erb:52: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/restaurants/index.html.erb:54: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/andrewhoffman/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/andrewhoffman/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/andrewhoffman/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/andrewhoffman/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-28 18:22:22 -0800
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered restaurants/index.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 90ms (Views: 89.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:22 -0800
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:22 -0800
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:22 -0800
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:22 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:22 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:22 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:22 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:22 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:22 -0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:22 -0800
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:22 -0800
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:22 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:22 -0800
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tKJBWPqs970uZ+mASQVDesqfSby+F7CM9b5A8KQgSaA="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:27 -0800
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-28 18:22:36 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-12-28 18:22:42 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QqHOkVdFyoMgeDeTeArY/aPeimi6nWl9Lvjr6RunMwA=", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'test@test.com'  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["current_sign_in_at", "2014-12-29 02:22:43.007780"], ["last_sign_in_at", "2014-12-29 02:19:31.374472"], ["sign_in_count", 6], ["updated_at", "2014-12-29 02:22:43.008580"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 69ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-28 18:22:43 -0800
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (0.1ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered restaurants/index.html.erb within layouts/application (26.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 67ms (Views: 66.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:43 -0800
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:43 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:43 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:43 -0800
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:43 -0800
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:43 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:43 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:43 -0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:43 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:43 -0800
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:43 -0800
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:43 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:43 -0800
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DgVS7bqpbDuzeg/pIM1pt+x7+xV00zRYDDrQXy0LhP4="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 51ms (Views: 50.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
+
+
+Started GET "/assets/restaurants.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
+
+
+Started GET "/assets/restaurants.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-28 18:22:48 -0800
