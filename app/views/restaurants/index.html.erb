@@ -32,8 +32,15 @@
 </table>
 
 <br>
+<% if user_signed_in? %>
 <div style="text-align:left">
 <%= link_to 'New Restaurant', new_restaurant_path, class: "btn btn-link" %></div>
+<% else %>
+<div style="text-align:left">
+<%= link_to "Sign In to Add", new_user_session_path %>
+<!-- User must be signed in to add a new restaurant -->
+</div>
+<% end %>
 
 <center>
 <%= image_tag "/uploads/happy_footer.png" %></center></div></center><br>
